@@ -13,6 +13,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        if (savedInstanceState != null) {
+            percentual=savedInstanceState.getDouble("percentual")
+        }
+
         Log.i("PDM24.1","No onCreate, $percentual")
 
         val btCalc : Button = findViewById(R.id.btCalcular)
