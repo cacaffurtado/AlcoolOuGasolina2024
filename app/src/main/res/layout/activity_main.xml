@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#3C3F41"
-    android:backgroundTint="#60A817"
+    android:backgroundTint="?attr/colorPrimary"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -15,7 +15,7 @@
         android:layout_marginStart="3dp"
         android:layout_marginEnd="3dp"
         android:background="@drawable/rounded_layout"
-        android:backgroundTint="?android:backgroundTint"
+        android:backgroundTint="?attr/colorOnPrimary"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,9 +40,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="30dp"
-            android:text="ÁLCOOL OU GASOLINA?"
+            android:text="ÁLCOOL OU GASOLINA"
             android:textAlignment="center"
-            android:textColor="#1C641F"
+            android:textColor="?attr/colorSecondary"
             android:textSize="25sp"
             android:textStyle="bold" />
 
@@ -53,7 +53,8 @@
             android:layout_marginHorizontal="30dp"
             android:ems="10"
             android:hint="Preço do Álcool"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:textStyle="italic" />
 
         <EditText
             android:id="@+id/edGasolina"
@@ -62,7 +63,8 @@
             android:layout_marginHorizontal="30dp"
             android:ems="10"
             android:hint="Preço da Gasolina"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:textStyle="italic" />
 
         <Switch
             android:id="@+id/swPercentual"
@@ -74,6 +76,7 @@
             android:checked="false"
             android:text="75%"
             android:textAlignment="center"
+            android:theme="@style/SCBSwitch"
             tools:checked="false" />
 
         <Button
@@ -82,7 +85,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="30dp"
-            android:backgroundTint="#6F660F"
+            android:backgroundTint="?attr/colorPrimary"
+            android:textColor="?attr/colorSecondary"
             android:text="Calcular" />
 
         <TextView
@@ -90,9 +94,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="40dp"
             android:textAlignment="center"
-            android:textSize="16sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
     </LinearLayout>
