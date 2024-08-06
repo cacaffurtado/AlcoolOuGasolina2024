@@ -15,7 +15,7 @@
         android:layout_marginStart="3dp"
         android:layout_marginEnd="3dp"
         android:background="@drawable/rounded_layout"
-        android:backgroundTint="?attr/colorOnPrimary"
+        android:backgroundTint="?attr/colorSecondaryVariant"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,11 +28,12 @@
             android:layout_height="100dp"
             android:layout_gravity="center_horizontal"
             android:layout_margin="20dp"
-            android:contentDescription="uma bomba de gasolina ilustrando o app"
+            android:contentDescription="Uma bomba de gasolina ilustrando o App"
             android:paddingVertical="10dp"
             android:textAlignment="center"
             app:srcCompat="@drawable/combustivel"
-            tools:srcCompat="@drawable/combustivel" />
+            tools:srcCompat="@drawable/combustivel"
+            android:roundIcon="@drawable/rounded_layout" />
 
         <TextView
             android:id="@+id/titulo"
@@ -94,7 +95,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="30dp"
+            android:text=" "
             android:textAlignment="center"
             android:textSize="20sp"
             android:textStyle="bold" />
