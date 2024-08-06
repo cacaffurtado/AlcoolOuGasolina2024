@@ -1,22 +1,20 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.AlcoolOuGasolina" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.AlcoolOuGasolina" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#054047</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">#FFFFFF</item>
-        <item name="colorPrimaryDark">#054047</item>
+        <item name="colorPrimary">#062B07</item>
+        <item name="colorOnPrimary">#4E9852</item>
+
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">#CB584C</item>
-        <item name="colorSecondaryVariant">@color/teal_200</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondary">@color/white</item>
+
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">#054047</item>
+        <item name="android:statusBarColor">#1C641F</item>
 
         <!-- Customize your theme here. -->
-        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorPrimary">@color/black</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textColorHint">#FFFFFF</item>
-        <item name="android:backgroundTint">#054047</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:backgroundTint">#C6F299</item>
     </style>
 </resources>
