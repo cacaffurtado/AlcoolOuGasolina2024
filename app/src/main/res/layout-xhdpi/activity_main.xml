@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3C3F41"
+    android:backgroundTint="?attr/colorPrimary"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="550dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:background="@drawable/rounded_layout"
+        android:backgroundTint="?attr/colorSecondaryVariant"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:contentDescription="Uma bomba de gasolina ilustrando o App"
+            android:paddingVertical="10dp"
+            android:textAlignment="center"
+            app:srcCompat="@drawable/combustivel"
+            tools:srcCompat="@drawable/combustivel"
+            android:roundIcon="@drawable/rounded_layout" />
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="?attr/colorSecondary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edAlcool"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="30dp"
+            android:ems="10"
+            android:hint="@string/edAlcool"
+            android:inputType="numberDecimal"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/edGasolina"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="30dp"
+            android:ems="10"
+            android:hint="@string/edGasolina"
+            android:inputType="numberDecimal"
+            android:textStyle="italic" />
+
+        <Switch
+            android:id="@+id/swPercentual"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="20dp"
+            android:checked="false"
+            android:text="@string/_75"
+            android:textAlignment="center"
+            android:theme="@style/SCBSwitch"
+            tools:checked="false" />
+
+        <Button
+            android:id="@+id/btCalcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="?attr/colorPrimary"
+            android:text="@string/btnCalcular"
+            android:textAllCaps="true"
+            android:textColor="?attr/colorSecondary"
+            tools:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
