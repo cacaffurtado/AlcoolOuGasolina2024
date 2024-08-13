@@ -47,11 +47,11 @@ class MainActivity : AppCompatActivity() {
             val gasDouble: Double = gasValor.text.toString().toDouble()
 
             msgResultado.text = when {
-                alcDouble <= percentual * gasDouble -> "Álcool é a melhor opção!"
-                else -> "Gasolina é a melhor opção!"
+                alcDouble <= percentual * gasDouble -> getString(R.string.msgAlcool)
+                else -> getString(R.string.msgGasolina)
             }
         } else if (alcValor.text.toString() == "" || gasValor.text.toString() == "") {
-            msgResultado.text = "Preencha os valores dos dois Combustíveis!"
+            msgResultado.text = getString(R.string.msgError)
         }
     }
 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ethanol or Gasoline?</string>
+    <string name="edAlcool">ethanol price</string>
+    <string name="edGasolina">gasoline price</string>
+    <string name="_75">75%</string>
+    <string name="btnCalcular">Calculate</string>
+    <string name="msgAlcool">Ethanol is the best option!</string>
+    <string name="msgGasolina">Gasoline is the best option!</string>
+    <string name="msgError">Fill in the prices of the two fuels!</string>
+</resources>
